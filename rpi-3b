@@ -153,8 +153,7 @@ CONFIG_TARGET_EXT4_BLOCKSIZE_4K=y
 # CONFIG_TARGET_EXT4_BLOCKSIZE_1K is not set
 CONFIG_TARGET_EXT4_BLOCKSIZE=4096
 # CONFIG_TARGET_EXT4_JOURNAL is not set
-CONFIG_TARGET_ROOTFS_SQUASHFS=y
-CONFIG_TARGET_SQUASHFS_BLOCK_SIZE=256
+# CONFIG_TARGET_ROOTFS_SQUASHFS is not set
 CONFIG_TARGET_UBIFS_FREE_SPACE_FIXUP=y
 CONFIG_TARGET_UBIFS_JOURNAL_SIZE=""
 CONFIG_TARGET_IMAGES_GZIP=y
@@ -1539,30 +1538,23 @@ CONFIG_PACKAGE_brcm2708-gpu-fw=y
 #
 # CONFIG_PACKAGE_libncurses-dev is not set
 # CONFIG_PACKAGE_zlib-dev is not set
-CONFIG_PACKAGE_ar=y
+# CONFIG_PACKAGE_ar is not set
 # CONFIG_PACKAGE_autoconf is not set
 # CONFIG_PACKAGE_automake is not set
-CONFIG_PACKAGE_binutils=y
+# CONFIG_PACKAGE_binutils is not set
 # CONFIG_PACKAGE_diffutils is not set
-CONFIG_PACKAGE_gcc=y
-
-#
-# Libraries
-#
-# CONFIG_INCLUDE_STATIC_LIBC is not set
-# CONFIG_INCLUDE_STATIC_LIBPTHREAD is not set
-# CONFIG_INCLUDE_STATIC_LIBSTDC is not set
-CONFIG_PACKAGE_gdb=y
+# CONFIG_PACKAGE_gcc is not set
+# CONFIG_PACKAGE_gdb is not set
 # CONFIG_PACKAGE_gdbserver is not set
 # CONFIG_PACKAGE_libtool-bin is not set
 # CONFIG_PACKAGE_lpc21isp is not set
 # CONFIG_PACKAGE_lttng-tools is not set
 # CONFIG_PACKAGE_m4 is not set
-CONFIG_PACKAGE_make=y
+# CONFIG_PACKAGE_make is not set
 # CONFIG_PACKAGE_meson is not set
 # CONFIG_PACKAGE_meson-src is not set
 # CONFIG_PACKAGE_ninja is not set
-CONFIG_PACKAGE_objdump=y
+# CONFIG_PACKAGE_objdump is not set
 # CONFIG_PACKAGE_patch is not set
 # CONFIG_PACKAGE_pkg-config is not set
 # CONFIG_PACKAGE_trace-cmd is not set
@@ -2355,12 +2347,12 @@ CONFIG_PACKAGE_kmod-cfg80211=y
 #
 # Go
 #
-CONFIG_PACKAGE_golang=y
+# CONFIG_PACKAGE_golang is not set
 # CONFIG_PACKAGE_golang-doc is not set
 # CONFIG_PACKAGE_golang-github-jedisct1-dnscrypt-proxy2-dev is not set
 # CONFIG_PACKAGE_golang-github-nextdns-nextdns-dev is not set
 # CONFIG_PACKAGE_golang-gitlab-yawning-obfs4-dev is not set
-CONFIG_PACKAGE_golang-src=y
+# CONFIG_PACKAGE_golang-src is not set
 # CONFIG_PACKAGE_golang-torproject-tor-fw-helper-dev is not set
 
 #
@@ -6268,7 +6260,7 @@ CONFIG_PACKAGE_xz=y
 # CONFIG_PACKAGE_blkdiscard is not set
 CONFIG_PACKAGE_blkid=y
 # CONFIG_PACKAGE_blockdev is not set
-# CONFIG_PACKAGE_cfdisk is not set
+CONFIG_PACKAGE_cfdisk=y
 # CONFIG_PACKAGE_cgdisk is not set
 # CONFIG_PACKAGE_eject is not set
 CONFIG_PACKAGE_fdisk=y
@@ -6293,8 +6285,8 @@ CONFIG_PACKAGE_partx-utils=y
 # CONFIG_PACKAGE_jupp is not set
 # CONFIG_PACKAGE_mg is not set
 # CONFIG_PACKAGE_nano is not set
-# CONFIG_PACKAGE_vim is not set
-CONFIG_PACKAGE_vim-full=y
+CONFIG_PACKAGE_vim=y
+# CONFIG_PACKAGE_vim-full is not set
 # CONFIG_PACKAGE_vim-fuller is not set
 # CONFIG_PACKAGE_vim-help is not set
 # CONFIG_PACKAGE_vim-runtime is not set
