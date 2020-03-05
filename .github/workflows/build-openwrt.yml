@@ -90,6 +90,11 @@ jobs:
         cd openwrt
         echo -e "$(nproc) thread compile"
         make -j$(nproc) || make -j1 V=s
+        echo "::set-output name=status::success"
+
+    - name: Check instance space usage
+      run: |
+        cd openwrt
         echo "======================="
         echo "Space usage:"
         echo "======================="
@@ -98,7 +103,6 @@ jobs:
         du -h --max-depth=1 ./ --exclude=build_dir --exclude=bin
         du -h --max-depth=1 ./build_dir
         du -h --max-depth=1 ./bin
-        echo "::set-output name=status::success"
 
     - name: Upload bin directory
       uses: actions/upload-artifact@master
