@@ -24,7 +24,7 @@ on:
 env:
   REPO_URL: https://github.com/Lienol/openwrt
   REPO_BRANCH: dev-19.07
-  CONFIG_FILE: rpi-3b
+  CONFIG_FILE: rpi-4b
   DIY_SH: diy.sh
   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
